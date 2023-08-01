@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new ScoreFragment();
                 }else {
                     fragment = new LibraryFragment();
-
                 }
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.frameLayout,fragment).commit();

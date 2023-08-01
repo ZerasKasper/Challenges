@@ -43,7 +43,7 @@ public class NotifiFragment extends Fragment {
 
         //Khởi tạo retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://192.168.112.116/challenges/")
+                .baseUrl("http://192.168.1.132/challenges/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
