@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ThanhToanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh Toán"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#223263"
+            android:gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tài khoản"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#223263"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="xxxx-xxxx-xxxx-xxxx"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edt_border"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên thụ hưởng"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="#223263"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="FPT Education"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edt_border"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:inputType="none"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian thanh toán: "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#223263"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textSize="25dp"
+                android:textColor="#E1A300"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thanh Toán"
+            android:textSize="30dp"
+            android:layout_marginTop="200dp"
+            android:backgroundTint="#FF6600"/>
+
+    </LinearLayout>
+
+</FrameLayout>
