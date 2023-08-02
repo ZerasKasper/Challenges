@@ -23,6 +23,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.challenges.adapter.NotificationAdapter;
+import com.example.challenges.fragment.DangKyHocLaiFragment;
 import com.example.challenges.fragment.DisplayQRContentFragment;
 import com.example.challenges.fragment.LibraryFragment;
 import com.example.challenges.fragment.NotifiFragment;
@@ -91,6 +92,18 @@ public class MainActivity extends AppCompatActivity {
         toggle.setDrawerIndicatorEnabled(true);
         toggle.syncState();
         drawerLayout.addDrawerListener(toggle);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                if (item.getItemId() == R.id.icDangKyHocLai) {
+                    Fragment fragment = new DangKyHocLaiFragment();
+                }
+                return true;
+            }
+        });
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail().build();

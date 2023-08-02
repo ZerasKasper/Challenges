@@ -12,7 +12,7 @@ import com.example.challenges.R;
 
 
 public class ThanhToanFragment extends Fragment {
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
