@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp"
-            android:background="@drawable/border"
+            android:background="@drawable/border2"
             android:layout_marginTop="10dp">
 
             <TextView
