@@ -3,12 +3,14 @@ package com.example.challenges.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.challenges.R;
 import com.example.challenges.model.DangKyHocLai;
+import com.example.challenges.model.LichHoc;
 import com.example.challenges.model.Notification;
 
 import java.util.List;
@@ -54,7 +56,10 @@ public class DangKyHocLaiAdapter extends RecyclerView.Adapter<DangKyHocLaiAdapte
 
     @Override
     public void onBindViewHolder(@NonNull DangKyHocLaiAdapter.DangKyHocLaiViewHolder holder, int position) {
-
+        DangKyHocLai dangkyhoclai = dangKyHocLais.get(position);
+        holder.tvCourse.setText(dangkyhoclai.getMon_hoc());
+        holder.tvPrice.setText(dangkyhoclai.getTien());
+        holder.tvTrangThai.setText(dangkyhoclai.getTrang_thai());
     }
 
     @Override
@@ -64,8 +69,12 @@ public class DangKyHocLaiAdapter extends RecyclerView.Adapter<DangKyHocLaiAdapte
 
 
     public class DangKyHocLaiViewHolder extends RecyclerView.ViewHolder {
+        private TextView tvCourse, tvPrice, tvTrangThai;
         public DangKyHocLaiViewHolder(@NonNull View itemView) {
             super(itemView);
+            tvCourse = itemView.findViewById(R.id.tvCourse);
+            tvPrice = itemView.findViewById(R.id.tvPrice);
+            tvTrangThai = itemView.findViewById(R.id.tvTrangThai);
         }
     }
 }
