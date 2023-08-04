@@ -2,197 +2,129 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_gravity="center_horizontal"
     android:gravity="center"
     android:padding="6dp">
-    <androidx.cardview.widget.CardView
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="15dp"
-        android:backgroundTint="#E1FFC0">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lớp:"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="#0E42FF"/>
-                <TextView
-                    android:id="@+id/tvLopThi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:hint="Lớp"
-                    android:textSize="20dp"
-                    android:textColor="#FF0000"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Phòng:"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tvPhongThi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:hint="Phòng"
-                    android:textSize="16dp"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ca thi:"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tvCaThi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:hint="Ca thi"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="5dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ngày thi:"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tvNgayThi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Ngày thi"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="5dp"/>
-            </LinearLayout>
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="15dp"
-        android:layout_marginLeft="10dp"
-        android:backgroundTint="@android:color/transparent">
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvCaThi"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="ca thi"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvNgayThi"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày thi"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Mob403"
+                android:id="@+id/tvMaMonThi"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="PHP"
+                android:id="@+id/tvTenMonThi"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
-                    android:text="Môn thi:"
-                    android:textSize="20dp"
-                    android:textColor="#0E42FF"
-                    android:textStyle="bold"/>
+                    android:textSize="15dp"
+                    android:text="Lớp: "
+                    android:textColor="@color/black"/>
+
                 <TextView
-                    android:id="@+id/tvMaMonThi"
+                    android:id="@+id/tvLopThi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:hint="Mã môn"
-                    android:textSize="20dp"
-                    android:textColor="#FF0000"
-                    android:textStyle="bold"/>
+                    android:textSize="15dp"
+                    android:text="MD17301"
+                    android:textColor="@color/black"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="90dp"
                     android:layout_height="wrap_content"
-                    android:text="-"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:text="Giảng viên 1: "
                     android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tvTenMonThi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Tên môn"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="5dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Đợt thi:"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-                <TextView
-                    android:id="@+id/tvDotThi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Đợt thi"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="5dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="GV1:"
-                    android:textSize="16dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
+
                 <TextView
                     android:id="@+id/tvGV1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Giảng viên 1"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="5dp"/>
+                    android:textSize="15dp"
+                    android:text="tuanda52"
+                    android:textColor="@color/black"/>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phòng thi"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvPhongThi"/>
+
+                <TextView
+                    android:id="@+id/tvDotThi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Đợt 1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+
+
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 </LinearLayout>
