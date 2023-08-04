@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                     toolBar.setTitle("Lịch Thi");
                     fragment = new ScoreFragment();
                 } else {
-                    toolBar.setTitle("Thư viện");
+                    toolBar.setTitle("Khác");
                     fragment = new LibraryFragment();
                 }
                 //Kiểm tra nếu Fragment đang hiển thị implement giao diện SearchableFragment

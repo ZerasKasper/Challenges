@@ -12,10 +12,14 @@ import com.example.challenges.R;
 
 public class LibraryFragment extends Fragment {
 
+    // code dang ky học lại trong này
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_library, container, false);
+
+
+
     }
 }

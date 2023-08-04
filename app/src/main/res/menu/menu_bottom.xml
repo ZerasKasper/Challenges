@@ -29,6 +29,6 @@
         android:id="@+id/libraryBottom"
         android:iconTint="#F85A1A"
         android:icon="@drawable/library_og"
-        android:title="Library"
+        android:title="Khác"
         app:showAsAction="ifRoom"/>
 </menu>
