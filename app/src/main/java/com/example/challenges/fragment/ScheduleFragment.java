@@ -53,9 +53,12 @@ public class ScheduleFragment extends Fragment implements SearchableFragment {
         lichHocAdapter = new LichHocAdapter(lichHocList);
         rcvLichHoc.setAdapter(lichHocAdapter);
 
+        //
+        //.baseUrl("https://demondev.games/api/")
         //Khởi tạo retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://demondev.games/api/")
+
+                .baseUrl("http://172.16.66.147/challenges/lich_hoc/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

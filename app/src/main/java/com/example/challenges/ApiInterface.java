@@ -25,4 +25,7 @@ public interface ApiInterface {
 
     @GET("get_lich_thi.php")
     Call<List<LichThi>> getLichThi();
+
+    @GET("get_thilai.php")
+    Call<List<LichThi>> getThilai();
 }

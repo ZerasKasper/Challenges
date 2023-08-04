@@ -56,10 +56,11 @@ public class NotifiFragment extends Fragment implements SearchableFragment {
         notificationAdapter = new NotificationAdapter(notificationList);
         rcvNotification.setAdapter(notificationAdapter);
 
-        //.baseUrl("http://172.16.66.147/challenges/Thong_Bao/")
+        // .baseUrl("https://demondev.games/api/")
         //Khởi tạo retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://demondev.games/api/")
+
+                .baseUrl("http://172.16.66.147/challenges/Thong_Bao/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

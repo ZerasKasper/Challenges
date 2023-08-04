@@ -53,9 +53,11 @@ public class ScoreFragment extends Fragment implements SearchableFragment {
         lichThiAdapter = new LichThiAdapter(lichThiList);
         rcvLichThi.setAdapter(lichThiAdapter);
 
+        //.baseUrl("https://demondev.games/api/")
         //Khởi tạo retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://demondev.games/api/")
+
+                .baseUrl("http://172.16.66.147/challenges/lich_thi/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
