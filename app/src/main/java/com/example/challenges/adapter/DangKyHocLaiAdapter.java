@@ -57,7 +57,7 @@ public class DangKyHocLaiAdapter extends RecyclerView.Adapter<DangKyHocLaiAdapte
     @Override
     public void onBindViewHolder(@NonNull DangKyHocLaiAdapter.DangKyHocLaiViewHolder holder, int position) {
         DangKyHocLai dangkyhoclai = dangKyHocLais.get(position);
-        holder.tvCourse.setText(dangkyhoclai.getMon_hoc());
+        holder.tvCourse.setText(dangkyhoclai.getTen_mon());
         holder.tvPrice.setText(dangkyhoclai.getTien());
         holder.tvTrangThai.setText(dangkyhoclai.getTrang_thai());
     }
