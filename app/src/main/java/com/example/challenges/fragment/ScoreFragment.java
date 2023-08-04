@@ -55,7 +55,7 @@ public class ScoreFragment extends Fragment implements SearchableFragment {
 
         //Khởi tạo retrofit
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://172.16.66.147/challenges/Lich_Thi/")
+                .baseUrl("https://demondev.games/api/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
