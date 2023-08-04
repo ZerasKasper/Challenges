@@ -23,7 +23,7 @@
         android:id="@+id/scoreBottom"
         android:iconTint="@color/black"
         android:icon="@drawable/ic_credit_score"
-        android:title="Bảng điểm"
+        android:title="Lịch thi"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/libraryBottom"
